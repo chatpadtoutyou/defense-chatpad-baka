@@ -1,2 +1,1 @@
-$('.acjg9d.a2J9sc').empty();
-$('.mNWoyd').empty();
+setTimeout(() => { $('.qXzEJb').empty(); }, 2000);

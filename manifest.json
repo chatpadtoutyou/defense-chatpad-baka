@@ -10,7 +10,8 @@
         {
             "matches": [
                 "https://www.google.com/maps/*",
-                "https://www.google.co.jp/maps/*"
+                "https://www.google.co.jp/maps/*",
+                "https://www.google.com/search?q=*"
             ],
             "css": [
                 "css/google-maps.css"
