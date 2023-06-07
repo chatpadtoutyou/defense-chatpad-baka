@@ -1,0 +1,177 @@
+{
+    "name": "defense-chatpad-baka",
+    "description": "defense-chatpad-baka",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.google.com/maps/*",
+                "https://www.google.co.jp/maps/*",
+                "https://www.google.com/search?q=*"
+            ],
+            "css": [
+                "css/google-maps.css"
+            ],
+            "js": [
+                "js/jquery-3.6.3.min.js",
+                "js/google-maps.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://twitter.com/*"
+            ],
+            "exclude_matches": [
+                "https://twitter.com/*/following",
+                "https://twitter.com/*/followers"
+            ],
+            "css": [
+                "css/twitter.css"
+            ],
+            "js": [
+                "js/jquery-3.6.3.min.js",
+                "js/twitter.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://twitter.com/*/following",
+                "https://twitter.com/*/followers"
+            ],
+            "js": [
+                "js/jquery-3.6.3.min.js",
+                "js/twitter_follow.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://drrrkari.com/lounge/",
+                "http://hinan.drrrkari.com/lounge/"
+            ],
+            "css": [
+                "css/drrrkari_lounge.css"
+            ],
+            "js": [
+                "js/jquery-3.6.3.min.js",
+                "js/drrrkari_lounge.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://drrrkari.com/room/",
+                "http://hinan.drrrkari.com/room/"
+            ],
+            "css": [
+                "css/drrrkari_room.css"
+            ],
+            "js": [
+                "js/jquery-3.6.3.min.js",
+                "js/drrrkari_room.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://drrrkari.com/error.html?393",
+                "http://drrrkari.com/error.html?393"
+            ],
+            "js": [
+                "js/jquery-3.6.3.min.js",
+                "js/drrrkari_error.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://www.youtube.com/watch?v=*"
+            ],
+            "css": [
+                "css/youtube_watch.css"
+            ],
+            "js": [
+                "js/jquery-3.6.3.min.js",
+                "js/youtube_watch.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://drrrkari.com/room/"
+            ],
+            "css": [
+                "css/drrrkari_room.css"
+            ],
+            "js": [
+                "js/jquery-3.6.3.min.js",
+                "js/drrrkari_room.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://qiita.com/*"
+            ],
+            "css": [
+                "css/qiita.css"
+            ],
+            "js": [
+                "js/jquery-3.6.3.min.js",
+                "js/qiita.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://sp.chatpad.jp/room/*"
+            ],
+            "css": [
+                "css/sp_chatpad_room.css"
+            ],
+            "js": [
+                "js/jquery-3.6.3.min.js",
+                "js/sp_chatpad_room.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://chatpad.jp/chatroom.html"
+            ],
+            "css": [
+                "css/chatpad_room.css"
+            ],
+            "js": [
+                "js/jquery-3.6.3.min.js",
+                "js/chatpad_room.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://192.168.11.1/cgi-bin/cgi?req=twz&reboot=1"
+            ],
+            "js": [
+                "js/jquery-3.6.3.min.js",
+                "js/router_reboot.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://192.168.11.1/cgi-bin/cgi?req=frm&frm=advanced.html&CAT=DIAG&ITEM=SYSTEM&reboot=1"
+            ],
+            "js": [
+                "js/jquery-3.6.3.min.js",
+                "js/router_reboot2.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://zenn.dev/*"
+            ],
+            "css": [
+                "css/zenn.css"
+            ],
+            "js": [
+                "js/jquery-3.6.3.min.js",
+                "js/zenn.js"
+            ]
+        }
+    ]
+}
