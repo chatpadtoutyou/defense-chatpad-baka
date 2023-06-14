@@ -57,13 +57,13 @@ function removeTweet(self) {
     const parent = self.parents('[data-testid="tweet"]');
     parent.find('[data-testid="User-Names"]:first span').empty();
     removeUserAvatar(parent.find(`[data-testid="UserAvatar-Container-unknown"] img`));
-    commentSubstring(parent.find('[data-testid="tweetText"]:first span'));
+    //commentSubstring(parent.find('[data-testid="tweetText"]:first span'));
 }
 
 function removeEmbedTweet(parent) {
     removeUserAvatar(parent.find(`[data-testid="UserAvatar-Container-unknown"] img`));
     parent.find('[data-testid="UserAvatar-Container-unknown"]:first').siblings('div').find('span').empty();
-    commentSubstring(parent.find('[data-testid="tweetText"]:first span'));
+    //commentSubstring(parent.find('[data-testid="tweetText"]:first span'));
 }
 
 function removeUserCell(self) {
