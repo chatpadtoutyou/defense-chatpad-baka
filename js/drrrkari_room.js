@@ -60,7 +60,7 @@ $(() => {
 
     setInterval(() => {
         $('#change').click();
-    }, 1000);
+    }, 500);
 
     setTimeout(() => {
         location.href = location.href;
