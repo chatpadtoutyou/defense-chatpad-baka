@@ -10,7 +10,7 @@ setTimeout(() => {
 }, settingsButtonTime + 400);
 
 setTimeout(() => {
-    $('.ytp-menuitem:nth-child(2)').click();
+    $('.ytp-menuitem:nth-child(1)').click();
 }, settingsButtonTime + 1000);
 
 const showNames = [];
