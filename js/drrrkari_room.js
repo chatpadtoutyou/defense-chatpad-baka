@@ -69,6 +69,6 @@ $(() => {
 
     setTimeout(() => {
         location.href = location.href;
-    }, 120000);
+    }, 180000);
 
 });
