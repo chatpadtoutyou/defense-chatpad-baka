@@ -172,6 +172,15 @@
                 "js/jquery.min.js",
                 "js/zenn.js"
             ]
+        },
+        {
+            "matches": [
+                "https://www.msn.com/ja-jp/*"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/msn.js"
+            ]
         }
     ]
 }
