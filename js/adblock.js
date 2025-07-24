@@ -60,6 +60,6 @@ function remove(selector) {
     const iframe = $('iframe').contents();
     obj = iframe.find(selector);
     if (obj.length > 0) {
-        obj.remove();
+        iframe.remove();
     }
 }
