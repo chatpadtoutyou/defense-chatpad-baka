@@ -3,12 +3,12 @@ var adblockTimeIdIndex = 0;
 $(() => {
     removeAd();
     const adblockTimeId = setInterval(() => {
-        if (adblockTimeIdIndex++ > 6) {
+        if (adblockTimeIdIndex++ > 5) {
             clearInterval(adblockTimeId);
             return;
         }
         removeAd();
-    }, 300);
+    }, 200);
 });
 
 function removeAd() {
