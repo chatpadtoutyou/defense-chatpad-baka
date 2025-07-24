@@ -3,7 +3,7 @@ var adblockTimeIdIndex = 0;
 $(() => {
     removeAd();
     const adblockTimeId = setInterval(() => {
-        if (adblockTimeIdIndex++ > 7) {
+        if (adblockTimeIdIndex++ > 6) {
             clearInterval(adblockTimeId);
             return;
         }
@@ -47,10 +47,18 @@ function removeAd() {
     remove('[class$="_pr"]');
     remove('[id$="Ad"]');
     remove('[class^="pr-"]');
+    remove('.yjAdImage');
+    remove('.yjAdLink');
+    remove('[src*="yads"]');
 }
 
 function remove(selector) {
-    const obj = $(selector);
+    var obj = $(selector);
+    if (obj.length > 0) {
+        obj.remove();
+    }
+    const iframe = $('iframe').contents();
+    obj = iframe.find(selector);
     if (obj.length > 0) {
         obj.remove();
     }

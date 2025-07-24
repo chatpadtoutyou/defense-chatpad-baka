@@ -19,6 +19,8 @@
 [class^="pr-"] [class^="yads"],
 [class^="yjAd"],
 [class^="yjdad"],
+.yjAdImage,
+.yjAdLink
 [data-i-url^="https://ads-"],
 [href^="https://ads."],
 [id$="Ad"],
