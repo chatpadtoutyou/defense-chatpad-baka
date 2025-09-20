@@ -1,0 +1,9 @@
+$('.ProfileCard_avatar__yI2q3').empty();
+$('.ProfileCard_bio__yQk7x').empty();
+$('.ProfileCard_displayName__bHra8').empty();
+$('.SidebarUserBio_name__6kFYE').empty();
+$('.ArticleSidebar_authorLink__ZBDmq').empty();
+$('.AvatarImage_plain__BCJNs').empty();
+$('.AvatarImage_border__33_UE').empty();
+$('.ThreadItemContent_userName__4WlCb').empty();
+$('.SidebarUserBio_container__kwCsb').empty();
