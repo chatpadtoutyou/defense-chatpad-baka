@@ -1,0 +1,3 @@
+div[role="tablist"] div[role="presentation"]:nth-child(1) {
+    display: none;
+}
