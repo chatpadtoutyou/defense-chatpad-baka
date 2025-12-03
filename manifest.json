@@ -1,0 +1,435 @@
+{
+    "name": "defense-chatpad-baka",
+    "description": "defense-chatpad-baka",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.google.com/*",
+                "https://www.google.co.jp/*"
+            ],
+            "css": [
+                "css/google.css"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/google.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://www.google.com/maps*",
+                "https://www.google.co.jp/maps*",
+                "https://www.google.com/search*"
+            ],
+            "css": [
+                "css/google-search.css"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/google-search.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://twitter.com/*"
+            ],
+            "exclude_matches": [
+                "https://twitter.com/*/following",
+                "https://twitter.com/*/followers"
+            ],
+            "css": [
+                "css/twitter.css"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/twitter.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://twitter.com/*/following",
+                "https://twitter.com/*/followers"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/twitter_follow.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://drrrkari.com/lounge/",
+                "http://hinan.drrrkari.com/lounge/"
+            ],
+            "css": [
+                "css/drrrkari_lounge.css"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/drrrkari_lounge.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://drrrkari.com/room/",
+                "http://hinan.drrrkari.com/room/"
+            ],
+            "css": [
+                "css/drrrkari_room.css"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/drrrkari_room.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://drrrkari.com/error.html?393",
+                "http://drrrkari.com/error.html?393"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/drrrkari_error.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://drrrkari.com/create_room/",
+                "http://hinan.drrrkari.com/create_room/"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/drrrkari_create_room.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "css": [
+                "css/youtube.css"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/youtube.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://www.youtube.com/watch*"
+            ],
+            "css": [
+                "css/youtube_watch.css"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/youtube_watch.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://www.youtube.com/watch?v=*&list=*"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/youtube_watch_list.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://www.youtube.com/watch?v=&list=*"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/youtube_watch_link_list.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://drrrkari.com/room/"
+            ],
+            "css": [
+                "css/drrrkari_room.css"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/drrrkari_room.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://sp.chatpad.jp/room/*"
+            ],
+            "css": [
+                "css/sp_chatpad_room.css"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/sp_chatpad_room.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://chatpad.jp/chatroom.html"
+            ],
+            "css": [
+                "css/chatpad_room.css"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/chatpad_room.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://192.168.11.1/cgi-bin/cgi?req=twz&reboot=1"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/router_reboot.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://192.168.11.1/cgi-bin/cgi?req=frm&frm=advanced.html&CAT=DIAG&ITEM=SYSTEM&reboot=1"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/router_reboot2.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://192.168.11.1/cgi-bin/cgi?req=frm&frm=advanced.html&CAT=DIAG&ITEM=SYSTEM&id=filter_ip"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/set_router_filter_ip.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://zenn.dev/*"
+            ],
+            "css": [
+                "css/zenn.css"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/zenn.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://www.msn.com/ja-jp/*"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/msn.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://*.jp-bank.japanpost.jp/tp1web/U010101WAK.do*"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/japanpost_U010101WAK.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://*.jp-bank.japanpost.jp/tp1web/pc/U010902SCR.do*"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/japanpost_U010902SCR.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://*.jp-bank.japanpost.jp/tp1web/pc/U480102SCR.do*"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/encoding.min.js",
+                "js/japanpost_U480102SCR.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://*.jp-bank.japanpost.jp/tp1web/dcwcgi/DC_USR"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/japanpost_DC_USR.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://*.jp-bank.japanpost.jp/tp1web/pc/U010904SCR.do*"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/japanpost_U010904SCR.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "exclude_matches": [
+                "https://www.gaitame.com/markets/calendar/",
+                "https://www.youtube.com/watch?*",
+                "https://*.jp-bank.japanpost.jp/*",
+                "https://*.slack.com/*",
+                "https://www.google.com/search*"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/adblock.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "css": [
+                "css/all.css"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/all.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://bbss.softbankbb.co.jp/AUT/*"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/softbankbb_aut.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://www.youtube.com/"
+            ],
+            "css": [
+                "css/youtube_top.css"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/youtube_top.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://www.youtube.com/c/tvtokyonews/featured"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/youtube_tvtokyobiz_featured.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://www.youtube.com/c/tvtokyonews/playlists"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/youtube_tvtokyonews_playlists.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://kabu.click-sec.com/sec2/account/displayBillingDeposit.do*",
+                "https://ib.sevenbank.co.jp/IB/IB_U_IS_001/IB_U_IS_001_100.aspx",
+                "https://ib.sevenbank.co.jp/IB/IB_U_IS_001/IB_U_IS_001_800.aspx"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/kabu.click-sec.com_billing.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://www.gaitame.com/markets/calendar/"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/gaitame_calendar.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://www.amazon.co.jp/gp/video/detail/*"
+            ],
+            "css": [
+                "css/www.amazon.co.jp_gp_video.css"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/www.amazon.co.jp_gp_video.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://schoo.jp/*"
+            ],
+            "css": [
+                "css/schoo.jp.css"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/schoo.jp.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://employment.en-japan.com/desc*"
+            ],
+            "css": [
+                "css/employment.en-japan.com.css"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/employment.en-japan.com.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://chatgpt.com/",
+                "https://auth.openai.com/log-in-or-create-account",
+                "https://www.amazon.co.jp/ax/claim*",
+                "https://www.amazon.co.jp/ap/signin",
+                "https://www.amazon.co.jp/ap/signin*",
+                "https://employment.en-japan.com/login/",
+                "https://slack.com/*",
+                "https://*.slack.com/*",
+                "https://webmail.lolipop.jp/login",
+                "https://kintaiplus.freee.co.jp/admin*",
+                "https://sec-sso.click-sec.com/loginweb/sessionInvalidate"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/login.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://accounts.google.com/*"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/accounts.google.js"
+            ]
+        }
+    ]
+}
